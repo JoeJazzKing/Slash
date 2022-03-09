@@ -1,0 +1,26 @@
+{
+  "name": "slash",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "client":"npm run start --prefix ../front-end",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node app.js",
+    "app":"nodemon app.js",
+    "dev":"concurrently \"npm run app\" \"npm run client\""
+  },
+  "author": "Alejandro Tsai",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "concurrently": "^7.0.0",
+    "express": "^4.17.3",
+    "jwt-simple": "^0.5.6",
+    "moment": "^2.29.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
